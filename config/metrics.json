@@ -1,0 +1,20 @@
+{
+  "mc_usd": {"type": "number", "unit": "USD", "minimum": 0, "description": "流通市值，注明供应口径；FDV不能代填", "max_age_seconds": 300, "sources": ["DATA_PROVIDER", "CHAIN"]},
+  "external_market": {"type": "boolean", "unit": "boolean", "description": "已毕业外盘且资产/池绑定已核验", "max_age_seconds": 300, "sources": ["DATA_PROVIDER", "CHAIN"]},
+  "sellability_checked": {"type": "boolean", "unit": "boolean", "description": "指定区块和上下文的卖出核验；有交易页或X截图不足以确认，true不保证未来可卖", "max_age_seconds": 300, "sources": ["DATA_PROVIDER", "CHAIN"]},
+  "bundle_pct": {"type": "number", "unit": "percent", "minimum": 0, "maximum": 100, "description": "捆绑地址集合/供应量；方法须定义", "max_age_seconds": 300, "sources": ["DATA_PROVIDER", "CHAIN"]},
+  "insider_pct": {"type": "number", "unit": "percent", "minimum": 0, "maximum": 100, "description": "内部地址集合/供应量；不得与捆绑混用", "max_age_seconds": 300, "sources": ["DATA_PROVIDER", "CHAIN"]},
+  "fo_pct": {"type": "number", "unit": "percent", "minimum": 0, "maximum": 100, "description": "必须先核实供应商fo分子分母和网络口径；未核时UNVERIFIED，禁止自行解释", "max_age_seconds": 300, "sources": ["DATA_PROVIDER"]},
+  "fo_delta_24h_pp": {"type": "number", "unit": "percentage_points", "minimum": -100, "maximum": 100, "description": "同口径fo(t)-fo(t-24h)，需两时点原始证据；新币历史不足不能写0", "max_age_seconds": 300, "sources": ["DATA_PROVIDER"]},
+  "bot_detected": {"type": "boolean", "unit": "boolean", "description": "本次规定X覆盖范围内是否发现同CA机器人模式；false仅表示该覆盖内未检出", "max_age_seconds": 900, "sources": ["X"]},
+  "fomo_independent_families": {"type": "integer", "unit": "count", "minimum": 0, "maximum": 7, "description": "24h内同对象独立证据家族数；同一作者/复用同一原帖不能单独凑两个独立信号", "max_age_seconds": 900, "sources": ["X"]},
+  "third_party_metric": {"type": "number", "unit": "source_defined", "minimum": 0, "description": "A类当时可知的第三方费率或份额，method_id注明原单位/窗口/独立性，不能用随后数据", "max_age_seconds": 86400, "sources": ["PRIMARY_ANALYSIS", "DATA_PROVIDER", "CHAIN"]},
+  "permission_age_hours": {"type": "number", "unit": "hours", "minimum": 0, "description": "官方原始事件发布到evaluated_at的真实时差，window_start=事件时刻，window_end=evaluated_at；关注不等于上架", "max_age_seconds": 900, "sources": ["OFFICIAL"]},
+  "holders_non_decreasing": {"type": "boolean", "unit": "boolean", "description": "已定义回撤区间内过滤后的持仓人数不下降；需区间两端快照", "max_age_seconds": 300, "sources": ["DATA_PROVIDER", "CHAIN"]},
+  "turnover_24h_mc": {"type": "number", "unit": "ratio", "minimum": 0, "description": "去重24h成交额/同口径当前市值，需两输入证据；历史不足未知", "max_age_seconds": 300, "sources": ["DATA_PROVIDER", "CHAIN"]},
+  "named_independent_buyers": {"type": "integer", "unit": "count", "minimum": 0, "description": "24h内独立主体主动买同CA；同主体多地址算1，需swap证据；请求失败=null", "max_age_seconds": 300, "sources": ["DATA_PROVIDER", "CHAIN"]},
+  "whale_net_buy_usd": {"type": "number", "unit": "USD", "description": "定义鲸鱼群组后24h净主动买入；排除空投、自转和普通到账", "max_age_seconds": 300, "sources": ["DATA_PROVIDER", "CHAIN"]},
+  "dev_sold": {"type": "boolean", "unit": "boolean", "description": "已核开发者地址簇在24h窗口主动卖出；普通转账不能直接当卖出", "max_age_seconds": 300, "sources": ["DATA_PROVIDER", "CHAIN"]},
+  "drawdown_verified": {"type": "boolean", "unit": "boolean", "description": "回撤幅度/持续窗口/价格源方法已定义并匹配；洗完的口述不足", "max_age_seconds": 300, "sources": ["DATA_PROVIDER", "CHAIN"]},
+  "fo_stable": {"type": "boolean", "unit": "boolean", "description": "短时斜率窗口与阈值须另核；未定义UNKNOWN；不得用24h净变化替代", "max_age_seconds": 300, "sources": ["DATA_PROVIDER"]}
+}

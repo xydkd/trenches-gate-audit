@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "schema_version": "1.0.0",
+  "product_mode": "OBSERVATION",
+  "runtime_mode": "LIVE",
+  "timezone": "Asia/Hong_Kong",
+  "schedule": "08:00 daily",
+  "window_hours": 24,
+  "max_objects": 8,
+  "max_one_hop_authors": 8,
+  "max_search_calls": 40,
+  "max_candidate_age_seconds": 900,
+  "market_snapshot_ttl_seconds": 300,
+  "enabled_types": ["A", "B"],
+  "disabled_types": ["C", "D"],
+  "allowed_statuses": ["OBSERVE", "UNKNOWN", "FAIL", "DISABLED"],
+  "common_required": ["mc_usd", "external_market", "sellability_checked", "bundle_pct", "insider_pct", "fo_pct", "fo_delta_24h_pp", "bot_detected", "fomo_independent_families"],
+  "type_required": {
+    "A": ["third_party_metric"],
+    "B": ["permission_age_hours"],
+    "C": [],
+    "D": ["holders_non_decreasing", "turnover_24h_mc", "dev_sold", "drawdown_verified", "fo_stable"]
+  },
+  "thresholds": {
+    "bundle_max_pct": 20,
+    "insider_max_pct": 20,
+    "fo_max_pct": 40,
+    "fo_delta_max_pp": 10,
+    "fomo_family_block_at": 2,
+    "b_event_age_max_hours_exclusive": 48,
+    "b_mc_max_usd_exclusive": 50000000,
+    "d_mc_min_usd": 300000,
+    "d_mc_max_usd": 3000000,
+    "d_fo_min_pct": 15,
+    "d_fo_max_pct": 25,
+    "d_turnover_min": 0.3,
+    "d_turnover_max": 2,
+    "d_named_min": 2,
+    "d_recheck_min_seconds": 300,
+    "d_recheck_max_seconds": 600
+  },
+  "disclaimer": "观察扫描，不构成投资建议。本报告记录指定时点的证据，不提供买卖、仓位或持续监测指令。"
+}
