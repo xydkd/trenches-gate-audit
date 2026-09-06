@@ -1,0 +1,11 @@
+{
+  "mode": "REPLAY",
+  "source": "upstream 615db59 03-AUDIT; user-provided narrative facts, not independently verified history",
+  "cases": [
+    {"name": "PONS vacuum", "as_of": "original card lacks precise timestamp", "facts": ["VACUUM narrative", "third-party fee table only appeared later", "common safety evidence incomplete"], "discovery_expectation": "VACUUM classification may be tested under given assumptions", "observation_expectation": "UNKNOWN", "reason": "Do not invent CA, safety fields or use subsequent data"},
+    {"name": "CASHCAT permission", "as_of": "original card lacks precise evaluation timestamp", "facts": ["PERMISSION narrative", "market cap described qualitatively", "event age and common safety data incomplete"], "discovery_expectation": "PERMISSION and conflict evidence handling", "observation_expectation": "UNKNOWN", "reason": "No precise age/cap/identity means no complete observation"},
+    {"name": "TryArcFinance", "as_of": "2026-09-05, exact time missing", "facts": ["project-origin story", "ambiguous Arc name", "mechanism unverified"], "discovery_expectation": "DROP if no approved discovery path; never merge with Circle Arc", "observation_expectation": "No candidate, or UNKNOWN if separately retained for identity clarification", "reason": "Unverified mechanism is not verified absence of mechanism"},
+    {"name": "ZZZ initial", "as_of": "article time, exact timestamp missing", "facts": ["LOTTERY narrative", "identity unverified", "claimed cap >=4M"], "discovery_expectation": "Do not promote unverified identity to A", "observation_expectation": "UNKNOWN identity; C remains closed regardless", "reason": "Later bot evidence cannot be used at initial time; complete synthetic C fixture separately tests DISABLED"},
+    {"name": "DuDu retrospective multiple", "as_of": "retrospective post time", "facts": ["no contemporaneous call supplied", "retrospective multiple and group promotion"], "discovery_expectation": "Do not admit excluded source or fabricate an earlier call", "observation_expectation": "No candidate", "reason": "Retrospective claim does not create past evidence"}
+  ]
+}
