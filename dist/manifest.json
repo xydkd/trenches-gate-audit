@@ -1,0 +1,13 @@
+{
+  "release_version": "1.0.0",
+  "source_base": "615db59d7aa33ae3d2a2c72a64b413fea8688a0f",
+  "files": {
+    "schemas/report.schema.json": "ad5410d432a0a106cbed8586e99b7685e92d11fcdbc07836f29af613f4e072d9",
+    "dist/GROK_TASK_PROMPT.txt": "5d2328c2dfdaf0ea5989459cf6aab5d3b9e0747da642d0d4a42692aafd02679d",
+    "04-PROMPT-v2.md": "7f90fc6ed9c8b917a3cdfbc0516199b1ac4ed420b8615f9102a3a7e4deb98940",
+    "config/policy.json": "c8ad1eb8bcce933602c0bb817a0f0a4a53552107f0b10b40589c823bf64d98f2",
+    "config/seeds.json": "9e3a3a7844ba1554bb474204074470d7b0bdc6c808ef40a6a8f285c888cf3398",
+    "config/metrics.json": "fe7fd81b03f7cfa193fde6b3eca12c0792547e960fdae79f2f3c9ecf049d1405",
+    "prompts/grok-observation.template.md": "8b7f16b8c9706b416d26aabf4f5238c53d5505c8d5ba4653367007730eaef19a"
+  }
+}
