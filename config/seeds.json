@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "priority_3": [
+    {"handle": "AvgJoesCrypto", "role": "分析与费率数据"},
+    {"handle": "PhilOnChain", "role": "可证伪条件"},
+    {"handle": "theunipcs", "role": "换题与叙事过程", "conflict_hint": "原送审资料称存在返佣关系；每次以可访问原始证据核验，不作为已证事实"},
+    {"handle": "neodot", "role": "真空叙事现场", "conflict_hint": "原送审资料称与项目立场一致；核验当前原帖"}
+  ],
+  "priority_2": [
+    {"handle": "The__Solstice", "role": "有限扫描，只保留新对象或新语法", "conflict_hint": "原送审资料称存在返佣关系；待核"},
+    {"handle": "0xAvast", "role": "有限扫描，只保留新对象或新语法", "conflict_hint": "持仓口吻须引用当次原帖"}
+  ],
+  "one_hop_only": ["grimsmarket"],
+  "temperature_only": ["CryptoKaleo", "IcedKnife", "gudmansachs", "lookonchain"],
+  "official_event_only": ["vladtenev", "RobinhoodApp", "ponsdotfamily", "circle", "arc"],
+  "chinese_thermometer": ["jiamigou", "tmel0211", "WuBlockchain", "BlockBeatsAsia", "PANewsCN"],
+  "conditional_one_hop": [{"handle": "SkyAAmen", "condition": "仅在已获准来源明确点名Circle Arc后，作为补充；不用于RH发现", "conflict_hint": "收费群关系须核验后标注"}],
+  "excluded_discovery": ["dudunode"],
+  "notes": "权重仅决定阅读顺序。所有handle先核验账号身份；无当期证据不作利益关系事实断言。例外账户不得在运行时自行加权。"
+}

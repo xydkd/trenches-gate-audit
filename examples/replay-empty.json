@@ -1,0 +1,109 @@
+{
+  "release_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "product_mode": "OBSERVATION",
+  "runtime_mode": "REPLAY",
+  "run_id": "SYNTHETIC-DO-NOT-PUBLISH",
+  "evaluated_at": "2026-09-05T00:05:00+00:00",
+  "window_start": "2026-09-04T00:00:00+00:00",
+  "window_end": "2026-09-05T00:00:00+00:00",
+  "run_status": "SUCCESS",
+  "weather": "quiet",
+  "coverage": [
+    {
+      "handle": "AvgJoesCrypto",
+      "status": "COMPLETE",
+      "queries": [
+        "from:AvgJoesCrypto"
+      ],
+      "note": "合成覆盖，用于测试；未执行真实搜索"
+    },
+    {
+      "handle": "PhilOnChain",
+      "status": "COMPLETE",
+      "queries": [
+        "from:PhilOnChain"
+      ],
+      "note": "合成覆盖，用于测试；未执行真实搜索"
+    },
+    {
+      "handle": "theunipcs",
+      "status": "COMPLETE",
+      "queries": [
+        "from:theunipcs"
+      ],
+      "note": "合成覆盖，用于测试；未执行真实搜索"
+    },
+    {
+      "handle": "neodot",
+      "status": "COMPLETE",
+      "queries": [
+        "from:neodot"
+      ],
+      "note": "合成覆盖，用于测试；未执行真实搜索"
+    },
+    {
+      "handle": "The__Solstice",
+      "status": "COMPLETE",
+      "queries": [
+        "from:The__Solstice"
+      ],
+      "note": "合成覆盖，用于测试；未执行真实搜索"
+    },
+    {
+      "handle": "0xAvast",
+      "status": "COMPLETE",
+      "queries": [
+        "from:0xAvast"
+      ],
+      "note": "合成覆盖，用于测试；未执行真实搜索"
+    },
+    {
+      "handle": "jiamigou",
+      "status": "COMPLETE",
+      "queries": [
+        "from:jiamigou"
+      ],
+      "note": "合成覆盖，用于测试；未执行真实搜索"
+    },
+    {
+      "handle": "tmel0211",
+      "status": "COMPLETE",
+      "queries": [
+        "from:tmel0211"
+      ],
+      "note": "合成覆盖，用于测试；未执行真实搜索"
+    },
+    {
+      "handle": "WuBlockchain",
+      "status": "COMPLETE",
+      "queries": [
+        "from:WuBlockchain"
+      ],
+      "note": "合成覆盖，用于测试；未执行真实搜索"
+    },
+    {
+      "handle": "BlockBeatsAsia",
+      "status": "COMPLETE",
+      "queries": [
+        "from:BlockBeatsAsia"
+      ],
+      "note": "合成覆盖，用于测试；未执行真实搜索"
+    },
+    {
+      "handle": "PANewsCN",
+      "status": "COMPLETE",
+      "queries": [
+        "from:PANewsCN"
+      ],
+      "note": "合成覆盖，用于测试；未执行真实搜索"
+    }
+  ],
+  "evidence": [],
+  "objects": [],
+  "stance_shifts": [],
+  "fomo_panel": [],
+  "lag": "合成测试，不代表实际中英文传播情况",
+  "checks_24h": [],
+  "disclaimer": "观察扫描，不构成投资建议。本报告记录指定时点的证据，不提供买卖、仓位或持续监测指令。"
+}

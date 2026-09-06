@@ -1,0 +1,20 @@
+{
+  "release_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "product_mode": "OBSERVATION",
+  "runtime_mode": "REPLAY",
+  "run_id": "SYNTHETIC-DO-NOT-PUBLISH",
+  "evaluated_at": "2026-09-05T00:05:00+00:00",
+  "window_start": "2026-09-04T00:00:00+00:00",
+  "window_end": "2026-09-05T00:00:00+00:00",
+  "run_status": "FAILED",
+  "weather": "unknown",
+  "coverage": [],
+  "evidence": [],
+  "objects": [],
+  "stance_shifts": [],
+  "fomo_panel": [],
+  "lag": "合成测试，不代表实际中英文传播情况",
+  "checks_24h": [],
+  "disclaimer": "观察扫描，不构成投资建议。本报告记录指定时点的证据，不提供买卖、仓位或持续监测指令。"
+}
